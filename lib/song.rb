@@ -1,13 +1,13 @@
 require 'pry'
 require_relative './concerns/memorable'
 require_relative './concerns/findable'
-require_relative './concerns/paramble'
+require_relative './concerns/paramable'
 
 class Song
   
   extend Memorable::ClassMethods
   extend Findable::ClassMethods
-  include Paramble::InstanceMethods
+  include Paramable::InstanceMethods
   
   attr_accessor :name
   attr_reader :artist
