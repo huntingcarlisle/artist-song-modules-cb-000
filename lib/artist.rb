@@ -5,6 +5,7 @@ require_relative './concerns/findable'
 class Artist
   
   extend Memorable::ClassMethods
+  extend Findable::ClassMethods
   
   attr_accessor :name
   attr_reader :songs
@@ -15,8 +16,6 @@ class Artist
     @@artists << self
     @songs = []
   end
-
-
 
   def self.all
     @@artists
