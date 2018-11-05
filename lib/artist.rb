@@ -1,5 +1,6 @@
 require 'pry'
 require_relative './concerns/memorable'
+require_relative './concerns/findable'
 
 class Artist
   
